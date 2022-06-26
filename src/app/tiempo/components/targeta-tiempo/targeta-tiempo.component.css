@@ -1,0 +1,67 @@
+.dia {
+    background-image: url(https://s.w-x.co/WeatherImages_Web/WeatherImage_Sunny-day_2.jpg?crop=16:9&width=800&format=pjpg&auto=webp&quality=70);
+    /* background-image: url(https://s.w-x.co/WeatherImages_Web/WeatherImage_Clear-night_1.jpg?crop=16:9&width=800&format=pjpg&auto=webp&quality=70); */
+    border-radius: 8px;
+}
+
+.noche {
+    /* background-image: url(https://s.w-x.co/WeatherImages_Web/WeatherImage_Sunny-day_2.jpg?crop=16:9&width=800&format=pjpg&auto=webp&quality=70); */
+    background-image: url(https://s.w-x.co/WeatherImages_Web/WeatherImage_Clear-night_1.jpg?crop=16:9&width=800&format=pjpg&auto=webp&quality=70);
+    border-radius: 8px;
+}
+
+.targeta-container{
+    width: 800px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.targeta-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(0,0,0,0.55);
+    padding: 10px 16px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.targeta-header h3,span {
+   margin: 0px 3px;
+   color: white;
+}
+
+.targeta-header h3 {
+    padding-bottom: 2px;
+}
+
+.targeta-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+}
+
+.targeta-body span {
+    font-size: 6rem;
+}
+
+.targeta-body p {
+    font-size: 1.5rem;
+    color: white;
+    margin: 2px 0px;
+}
+
+img {
+    width: 140px;
+    margin: 0px 60px;
+}
+
+@media screen and (max-width: 667px){
+    .targeta-container {
+        width: 100%;
+    }
+
+    img {
+        margin: auto;
+    }
+}

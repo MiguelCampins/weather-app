@@ -1,0 +1,67 @@
+<section>
+    <div class="targeta-container">
+        <h2>El tiempo en {{weather.name}}</h2>
+        <span class="grados">{{weather.main.feels_like | number: '1.0-0'}}°</span>
+        <p>Sensación</p>
+        <div class="targeta-body">
+            <div class="column ">
+                    <div class="mini">
+                        <div>
+                            <img src="assets/svg/wi-thermometer.svg">
+                            <span>Min/Max</span>
+                        </div>
+                        <div>
+                            <span>{{weather.main.temp_max | number: '1.0-0'}}°/{{weather.main.temp_min| number: '1.0-0'}}°</span>
+                        </div>
+                    </div>
+                    <div class="mini">
+                        <div>
+                            <img src="assets/svg/wi-humidity.svg">
+                            <span>Humedad</span>
+                        </div>
+                        <div>
+                            <span>{{weather.main.humidity}}%</span>
+                        </div>
+                    </div>
+                    <div class="mini">
+                        <div>
+                            <img src="assets/svg/wi-barometer.svg">
+                            <span>Presión</span>
+                        </div>
+                        <div>
+                            <span>{{weather.main.pressure}} mb</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="column">
+                <div class="mini">
+                    <div>
+                        <img src="assets/svg/wi-hurricane.svg">
+                        <span>Visibilidad</span>
+                    </div>
+                    <div>
+                        <span>{{weather.visibility * 0.001}} Km</span>
+                    </div>
+                </div>
+                <div class="mini">
+                    <div>
+                        <img src="assets/svg/wi-strong-wind.svg">
+                        <span>Viento</span>
+                    </div>
+                    <div>
+                        <span>{{weather.wind.speed * 3.6 | number: '1.0-0'}} Km/h</span>
+                    </div>
+                </div>
+                <div class="mini">
+                    <div>
+                        <img src="assets/svg/wi-small-craft-advisory.svg">
+                        <span>Dirección</span>
+                    </div>
+                    <div>
+                        <span>{{weather.wind.deg | number: '1.0-0'}}°</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>

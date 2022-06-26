@@ -1,0 +1,14 @@
+<section>
+    <div class="container">
+        <div class="container-tittle"><h1>Tiempo cada 3 horas</h1><span>- {{weather.city.name}}</span></div>
+        <div class="hora">Hasta {{getHora()}} CEST</div>
+        <div class="mini" *ngFor="let item of weather.list">
+            <div>{{formatoFecha(item.dt)}}</div>
+            <div style="font-size: 1.25rem;font-weight: 700; text-align: center;" >{{item.main.temp | number: '1.0-0'}}°</div>
+            <div><img src="assets/iconos/{{item.weather[0].icon}}.png"><span>{{item.weather[0].description | titlecase}}</span></div>
+            <div><img src="assets/svg/humidity.png" style="width: 22px;"><span >{{item.main.humidity}}%</span></div>
+            <div><img src="assets/svg/wind.png" style="width: 22px;"><span>{{item.wind.speed * 3.6 | number: '1.0-0'}} Km/h</span></div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,59 @@
+.container {
+    width: 800px;
+    min-height: 100vh;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 25px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    padding: 16px 0px;
+}
+
+.container .container-tittle {
+    display: flex;
+    align-items: center;
+    padding-bottom: 6px;
+}
+
+.container-tittle h1 {
+    margin: 0px;
+    padding-left: 26px;
+}
+
+.container-tittle span {
+    font-size: 1rem;
+    padding-left: 6px;
+}
+
+.hora {
+    border-bottom: 1px solid rgb(211, 211, 211);
+    padding: 0px 26px 26px;
+}
+
+.mini {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    padding: 8px 26px;
+}
+
+.mini div {
+    flex: 1 ;
+    display: flex;
+    align-items: center;
+}
+
+.mini img {
+    width: 40px;
+    color: aqua;
+}
+
+.mini span {
+    padding-left: 8px;
+}
+
+@media screen and (max-width: 667px){
+    .container {
+        width: 100%;
+    }
+    
+}

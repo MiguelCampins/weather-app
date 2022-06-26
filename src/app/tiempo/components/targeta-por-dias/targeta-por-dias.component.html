@@ -1,0 +1,26 @@
+<section>
+    <div class="targeta-container" *ngFor="let item of pronostico">
+        <div class="targeta-header">
+            <div><img src="assets/iconos/03d.png"><span>{{item.clouds.all}}%</span></div>
+            <div><img src="assets/svg/wind.png"><span>{{item.wind.speed * 3.6| number:'1.0-0'}}Km/h</span></div>
+            <div><img src="assets/svg/humidity.png"><span>{{item.main.humidity}}%</span></div>
+        </div>
+        <div class="targeta-body">
+            <div class="targeta-body-top">
+                <div>
+                    <span class="temp">24</span>
+                </div>
+                <div class="temp-right">
+                    <span style="font-size: 2rem; font-weight: bold;">°C</span>
+                    <div style="display: flex;"><span>Max {{item.main.temp_max | number: '1.0-0'}}°</span></div>
+                    <div style="display: flex;"><span>Min {{item.main.temp_min | number: '1.0-0'}}°</span></div>
+                </div>
+            </div>
+            <div class="targeta-body-bottom">
+                <h2>{{formatoFecha(item.dt)}}</h2>
+                <h3>{{item.weather[0].description | titlecase}}</h3>
+                <img src="assets/iconos/{{item.weather[0].icon}}.png">
+            </div>
+        </div>
+    </div>
+</section>

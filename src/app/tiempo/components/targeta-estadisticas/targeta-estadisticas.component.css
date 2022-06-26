@@ -1,0 +1,66 @@
+.targeta-container {
+    width: 800px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.targeta-container h2 {
+    font-size: 1.25rem;
+    padding: 10px 16px;
+    margin: 0px;
+}
+
+.targeta-container .grados {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+.targeta-container p {
+    margin: 0px 40px;
+}
+
+.targeta-body {
+    display: flex;
+    padding: 10px 16px;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 50%;
+}
+
+.column div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mini {
+    border-top: 1px solid rgb(204, 204, 204);
+    margin-right: 8px;
+    padding: 6px 0px;
+}
+
+.column img {
+    width: 36px;
+}
+
+.column span {
+    font-size: 1.25rem;
+    margin-right: 16px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 667px){
+
+    .targeta-container {
+        width: 100%;
+    }
+
+    .targeta-body {
+        flex-direction: column;
+    }
+}
