@@ -6,10 +6,11 @@
             <span>{{getHora()}}</span>
         </div>
         <div class="targeta-body">
-            <div >
+            <div class="desc">
                 <span>{{weather.main.temp | number: '1.0-0'}}°</span>
                 <p>{{weather.weather[0].description | titlecase}}</p>
-                <p>Min {{weather.main.temp_min | number: '1.0-0'}}° Max {{weather.main.temp_max | number: '1.0-0'}}°</p>
+                <p>Min {{weather.main.temp_min | number: '1.0-0'}}° </p>
+                <p>Max {{weather.main.temp_max | number: '1.0-0'}}°</p>
             </div>
             <div><img src="assets/iconos/{{weather.weather[0].icon}}.png" alt="icono"></div>
         </div>
